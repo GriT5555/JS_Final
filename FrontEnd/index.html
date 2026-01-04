@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+		rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="https://kit.fontawesome.com/70e629ddb8.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="blur">
+	<div id="hairs">
+		<p class="texth">Mode édition</p>
+		<div id="toaster"></div>
+	</div>
+	<header>
+		<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li>projets</li>
+				<li>contact</li>
+				<li id="LogoutButton">Logout</li> <!-- gerer avec classe active plutot que style.display dans le js-->
+				<li id="logbutton"><a href="Connect.html">Login</a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="introduction">
+			<figure>
+				<img src="./assets/images/sophie-bluel.png" alt="">
+			</figure>
+			<article>
+				<h2>Designer d'espace</h2>
+				<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison
+					finale du chantier.</p>
+				<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les
+					couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du
+					chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+				<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG,
+					décorateur(trice)</p>
+			</article>
+		</section>
+		<section id="portfolio">
+			<div class="pregallery">
+				<h2 class="pretitle">Mes Projets</h2>
+
+				<button id="modbutton">
+					<img class="modbuttimg" src="penicon.png" alt="edition" />
+				</button>
+			</div>
+			<div id="modcontainer">
+				<div class="modcontent">
+					<div id="modhead">
+						<h2 class="modtitle">Galerie photo</h2>
+						<button id="closemod">&times;</button>
+					</div class="galleryelements">
+					<div id="modgallery">
+
+					</div>
+					<div class="botmodbtns">	
+						<button id="picadder">Ajouter photo</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="modcontainer2">
+				<div class="modcontent2">
+					<div id="modhead2">
+						<button id="return">
+							<img src="returnarrow.png" alt="return" />
+						</button>
+						<h2 class="mod2title" id="addpic">Ajout photo</h2>
+						<button id="closemod2">&times;</button>
+					</div>
+						<div class="mod2inputs">
+							<form id="newassetinput" name="assetform">
+								<div class="mod2inputs">
+									<div id="dropzone">
+										<img id="imgdz" src="dropzoneblank.png" alt="dropzonelocation" />
+										<div class="dzbutton" id="dzbutton">
+											<p class="dzbuttontext">+ Ajouter photo</p>
+											<input type="file" id="imageInput" accept="image/*">
+										</div>
+										<p id ="dztext" class="dztxt">jpg, png : 4 mo max</p> 
+									</div>						
+									<label class="titlelabel">Titre</label>
+									<input id="titleinput" type="text" name="title" placeholder="" size="15" required />
+									<label class="categorylabel">Catégorie </label>
+									<select class="dropdowncatC" id="dropdowncatI" name="assetid" required>	
+													<!-- options / categories created with JS, select only-->
+									</select>
+								<button id="mod2submit">Valider</button>
+								</div>
+							</form>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="buttonrow">
+				<button class="buttons">Tous</button>
+			</div>
+
+			<div class="gallery">
+
+			</div>
+
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>Vous avez un projet ? Discutons-en !</p>
+			<form action="#" method="post">
+				<label for="name">Nom</label>
+				<input type="text" name="name" id="name">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<input type="submit" value="Envoyer">FrontEnd/gallery2.js
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li>Mentions Légales</li>
+			</ul>
+		</nav>
+	</footer>
+	<script type="module" src="Javascriptfront/gallery3.js"></script>
+	<script type="module" src="Javascriptfront/redirect.js"></script>
+	<script type="module" src="Javascriptfront/token.js"></script>
+	<script type="module" src="Javascriptfront/modale.js"></script>
+</body>
+
+</html>
