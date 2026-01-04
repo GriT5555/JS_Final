@@ -218,6 +218,10 @@ footer nav ul {
 	margin: 2em
 }
 
+#LogoutButton{
+	cursor: pointer;
+}
+
 .loginUI{
 	display: flex;
 	flex-direction: column;
