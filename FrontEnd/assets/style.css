@@ -334,7 +334,7 @@ footer nav ul {
 	left:50%;
 	transform: translate(-50%,-50%);
 	width:600px;
-	padding:50px;
+	padding:25px;
 	box-shadow: 0 5px 30px rgba(0,0,0,.30);
 	background: #fff;
 	visibility: hidden;
@@ -356,19 +356,17 @@ footer nav ul {
 }
 
 #modhead{
-	display:flex;
-	gap:50px;
-	justify-content: center;
+	padding-top: 20px;
 }
 
 #closemod{
-	font-size:25px;
-	height: 20px;
-	border:none;
-	border-radius: 35px;
-	cursor: pointer;
-	background-color: white;
-	color:black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .modtitle{
