@@ -469,10 +469,12 @@ footer nav ul {
 	
 .titlelabel{
 	display:flex;
+	padding-right: 400px;
 }
 
 .categorylabel{
 	display:flex;
+	padding-right: 365px;
 }
 
 #titleinput {
