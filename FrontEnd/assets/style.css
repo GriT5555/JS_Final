@@ -487,6 +487,7 @@ footer nav ul {
 	height:2.5rem;
 	border:none;
 	box-shadow:3px 3px 0.2rem #EFEFEF;
+	margin-bottom: 10px;
 }
 
 #dropzone{
@@ -571,6 +572,17 @@ footer nav ul {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 80%;               
+  background-color: #B3B3B3;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #modgallery{
