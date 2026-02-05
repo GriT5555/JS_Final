@@ -28,6 +28,7 @@ time, mark, audio, video {
 a{
 	text-decoration: none;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -53,10 +54,11 @@ table {
 }
 /* end reset css*/
 body {
-	max-width: 1140px;
+	max-width: 1140px; /* deux propriétés ci sur un bloc au dessus évite un overflow x*/
 	margin:auto;
 	font-family: 'Work Sans' ;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 header {
 	display: flex;
@@ -289,9 +291,10 @@ footer nav ul {
 #hairs{
 	display:none;
 	height: 59px;
-	max-width: none;
 	justify-content: center;
-	background-color: black;	
+	background-color: black;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .texth{
