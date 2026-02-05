@@ -423,6 +423,7 @@ footer nav ul {
 	opacity: 0;
 	transition: 0.5s; 
 	border-radius: 10px;
+	width: 535px;
 }
 
 #modcontainer2.active{
@@ -435,8 +436,10 @@ footer nav ul {
 #modhead2{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+	height: 1px;
+	padding-top:30px;
 }
 
 #closemod2{
@@ -461,32 +464,29 @@ footer nav ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	gap:15px;
 }
 	
 .titlelabel{
 	display:flex;
-	padding-right: 355px;
 }
 
 .categorylabel{
 	display:flex;
-	padding-right: 320px;
 }
 
 #titleinput {
 	width:80%;
 	height:2.5rem;
 	border:none;
-	box-shadow:1px 1px 0.2rem black;
+	box-shadow:3px 3px 0.2rem #EFEFEF;
 }
 
 #dropdowncatI{
 	width:80%;
 	height:2.5rem;
 	border:none;
-	box-shadow: 1px 1px 0.2rem black ;
+	box-shadow:3px 3px 0.2rem #EFEFEF;
 }
 
 #dropzone{
@@ -517,7 +517,7 @@ footer nav ul {
 	font-size: large;
 	padding:0.7rem;
 	border:none;
-	width : 60%;
+	width : 40%;
 }
 
 #dzbutton.active{
