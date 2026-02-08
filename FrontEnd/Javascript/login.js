@@ -20,14 +20,14 @@ async function postData(url = "", data = {}) {
     },
     redirect: "follow", 
     referrerPolicy: "no-referrer", 
-    body: JSON.stringify(data),
+    body: JSON.stringify(data), // parce que l'api a besoin de ce format
   });
   return response.json(); 
 }
 
 connectButton.addEventListener("click", async function (c) {
   c.preventDefault;
-  var inputMail = document.getElementById("email").value;
+  var inputMail = document.getElementById("email").value; // et pas const évidemment
   var inputPassword = document.getElementById("password").value;
   
   postData("http://localhost:5678/api/users/login", {email: inputMail,

@@ -3,6 +3,9 @@ var data = await fetch('http://localhost:5678/api/works')
   .then(dataFetch => data = dataFetch);
 
 const jsondata = [data]
+// console.log(jsondata);
+
+//filtres
 
 for (let i = 0; i < data.length; i++) {
 
@@ -78,6 +81,8 @@ var iddata = await fetch('http://localhost:5678/api/categories')
   .then(dataFetch => iddata = dataFetch)
 
 const jsondata2 = [iddata]  
+
+//filtres fonctionnels 
 
 for (let i = 0; i < iddata.length; i++) {
 
