@@ -4,4 +4,4 @@
 
 #### Une introduction intensive à l'utilisation de Javascript via la personnalisation d'un portfolio d'une architecte d'intérieur fictive incluant la mention de requêtes et l'utilisation d'un Swagger préparametré.
 
-[Retrouver les autres projets étudiants ou personnels ici](https://matjsdev.netlify.app/)
+<a href="https://matjsdev.netlify.app/" target="_blank" rel="noopener noreferrer">Retrouver les autres projets étudiants ou personnels ici</a>   
